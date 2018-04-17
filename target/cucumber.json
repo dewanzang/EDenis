@@ -1,0 +1,786 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12603351396,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.startBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Check Registered Cars on DVLA website and verified that the make and colour of the car matches the excel file",
+        "description": "",
+        "id": "dvla-cars-details-check;check-registered-cars-on-dvla-website-and-verified-that-the-make-and-colour-of-the-car-matches-the-excel-file;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 4267079227,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3219040949,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to get vehicle information from DVLA website",
+            "match": {
+              "location": "CarSearchSteps.NavigateToGetVehicleInformationFromDVLAWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2031770335,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the start now button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheStartButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 272633692,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the registration number of the car LM14 SXN",
+            "match": {
+              "arguments": [
+                {
+                  "val": " LM14 SXN",
+                  "offset": 42
+                }
+              ],
+              "location": "CarSearchSteps.EnterTheRegistrationNumberOfTheCar(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 835734533,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the continue button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 290677856,
+              "status": "passed"
+            },
+            "output": [
+              "Scenario passed"
+            ],
+            "line": 9,
+            "name": "the car registration number LM14 SXN search should return the correct make SEAT and colour GREY of the car",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LM14 SXN",
+                  "offset": 28
+                },
+                {
+                  "val": "SEAT",
+                  "offset": 75
+                },
+                {
+                  "val": "GREY",
+                  "offset": 91
+                }
+              ],
+              "location": "CarSearchSteps.CarSearchReturnCorrectMakeAndColour(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@TestRun"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4387426380,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.startBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Check Registered Cars on DVLA website and verified that the make and colour of the car matches the excel file",
+        "description": "",
+        "id": "dvla-cars-details-check;check-registered-cars-on-dvla-website-and-verified-that-the-make-and-colour-of-the-car-matches-the-excel-file;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1482376949,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5496727997,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to get vehicle information from DVLA website",
+            "match": {
+              "location": "CarSearchSteps.NavigateToGetVehicleInformationFromDVLAWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3397641767,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the start now button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheStartButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 262452719,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the registration number of the car LD05 DSY",
+            "match": {
+              "arguments": [
+                {
+                  "val": " LD05 DSY",
+                  "offset": 42
+                }
+              ],
+              "location": "CarSearchSteps.EnterTheRegistrationNumberOfTheCar(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 991786033,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the continue button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 285541183,
+              "status": "passed"
+            },
+            "output": [
+              "Scenario passed"
+            ],
+            "line": 9,
+            "name": "the car registration number LD05 DSY search should return the correct make SMART and colour SILVER of the car",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LD05 DSY",
+                  "offset": 28
+                },
+                {
+                  "val": "SMART",
+                  "offset": 75
+                },
+                {
+                  "val": "SILVER",
+                  "offset": 92
+                }
+              ],
+              "location": "CarSearchSteps.CarSearchReturnCorrectMakeAndColour(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@TestRun"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2738806092,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.startBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Check Registered Cars on DVLA website and verified that the make and colour of the car matches the excel file",
+        "description": "",
+        "id": "dvla-cars-details-check;check-registered-cars-on-dvla-website-and-verified-that-the-make-and-colour-of-the-car-matches-the-excel-file;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1186772523,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2197135828,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to get vehicle information from DVLA website",
+            "match": {
+              "location": "CarSearchSteps.NavigateToGetVehicleInformationFromDVLAWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2002393854,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the start now button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheStartButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 207419438,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the registration number of the car FH54 FXC",
+            "match": {
+              "arguments": [
+                {
+                  "val": " FH54 FXC",
+                  "offset": 42
+                }
+              ],
+              "location": "CarSearchSteps.EnterTheRegistrationNumberOfTheCar(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1061126893,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the continue button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212376194,
+              "status": "passed"
+            },
+            "output": [
+              "Scenario passed"
+            ],
+            "line": 9,
+            "name": "the car registration number FH54 FXC search should return the correct make VAUXHALL and colour SILVER of the car",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FH54 FXC",
+                  "offset": 28
+                },
+                {
+                  "val": "VAUXHALL",
+                  "offset": 75
+                },
+                {
+                  "val": "SILVER",
+                  "offset": 95
+                }
+              ],
+              "location": "CarSearchSteps.CarSearchReturnCorrectMakeAndColour(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@TestRun"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5587024889,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.startBrowser()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Check Registered Cars on DVLA website and verified that the make and colour of the car matches the excel file",
+        "description": "",
+        "id": "dvla-cars-details-check;check-registered-cars-on-dvla-website-and-verified-that-the-make-and-colour-of-the-car-matches-the-excel-file;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1134729597,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2949192339,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to get vehicle information from DVLA website",
+            "match": {
+              "location": "CarSearchSteps.NavigateToGetVehicleInformationFromDVLAWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1829506287,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the start now button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheStartButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169857365,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the registration number of the car LB57 SXA",
+            "match": {
+              "arguments": [
+                {
+                  "val": " LB57 SXA",
+                  "offset": 42
+                }
+              ],
+              "location": "CarSearchSteps.EnterTheRegistrationNumberOfTheCar(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 605175917,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the continue button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 184778953,
+              "status": "passed"
+            },
+            "output": [
+              "Scenario passed"
+            ],
+            "line": 9,
+            "name": "the car registration number LB57 SXA search should return the correct make FORD and colour GREY of the car",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LB57 SXA",
+                  "offset": 28
+                },
+                {
+                  "val": "FORD",
+                  "offset": 75
+                },
+                {
+                  "val": "GREY",
+                  "offset": 91
+                }
+              ],
+              "location": "CarSearchSteps.CarSearchReturnCorrectMakeAndColour(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@TestRun"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3143761037,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.startBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Check Registered Cars on DVLA website and verified that the make and colour of the car matches the excel file",
+        "description": "",
+        "id": "dvla-cars-details-check;check-registered-cars-on-dvla-website-and-verified-that-the-make-and-colour-of-the-car-matches-the-excel-file;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 1202709010,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2641374127,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to get vehicle information from DVLA website",
+            "match": {
+              "location": "CarSearchSteps.NavigateToGetVehicleInformationFromDVLAWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2228606705,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the start now button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheStartButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 214761596,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the registration number of the car HT05 FUG",
+            "match": {
+              "arguments": [
+                {
+                  "val": " HT05 FUG",
+                  "offset": 42
+                }
+              ],
+              "location": "CarSearchSteps.EnterTheRegistrationNumberOfTheCar(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 646167268,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the continue button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 242325631,
+              "status": "passed"
+            },
+            "output": [
+              "Scenario passed"
+            ],
+            "line": 9,
+            "name": "the car registration number HT05 FUG search should return the correct make PEUGEOT and colour BLUE of the car",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HT05 FUG",
+                  "offset": 28
+                },
+                {
+                  "val": "PEUGEOT",
+                  "offset": 75
+                },
+                {
+                  "val": "BLUE",
+                  "offset": 94
+                }
+              ],
+              "location": "CarSearchSteps.CarSearchReturnCorrectMakeAndColour(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@TestRun"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2576124854,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.startBrowser()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Check Registered Cars on DVLA website and verified that the make and colour of the car matches the excel file",
+        "description": "",
+        "id": "dvla-cars-details-check;check-registered-cars-on-dvla-website-and-verified-that-the-make-and-colour-of-the-car-matches-the-excel-file;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 1074900156,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.closeBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2229297390,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to get vehicle information from DVLA website",
+            "match": {
+              "location": "CarSearchSteps.NavigateToGetVehicleInformationFromDVLAWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1924269694,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the start now button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheStartButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 185517939,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the registration number of the car NK04 FNX",
+            "match": {
+              "arguments": [
+                {
+                  "val": " NK04 FNX",
+                  "offset": 42
+                }
+              ],
+              "location": "CarSearchSteps.EnterTheRegistrationNumberOfTheCar(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 870169804,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the continue button",
+            "match": {
+              "location": "CarSearchSteps.ClickOnTheContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 189279278,
+              "status": "passed"
+            },
+            "output": [
+              "Scenario passed"
+            ],
+            "line": 9,
+            "name": "the car registration number NK04 FNX search should return the correct make TRIUMPH and colour RED of the car",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NK04 FNX",
+                  "offset": 28
+                },
+                {
+                  "val": "TRIUMPH",
+                  "offset": 75
+                },
+                {
+                  "val": "RED",
+                  "offset": 94
+                }
+              ],
+              "location": "CarSearchSteps.CarSearchReturnCorrectMakeAndColour(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@TestRun"
+          }
+        ]
+      }
+    ],
+    "name": "DVLA Cars Details Check",
+    "description": "",
+    "id": "dvla-cars-details-check",
+    "keyword": "Feature",
+    "uri": "CarDetailsCheck.feature"
+  }
+]
