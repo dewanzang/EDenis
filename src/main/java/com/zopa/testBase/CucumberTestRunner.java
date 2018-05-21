@@ -1,4 +1,4 @@
-package com.dvla.testBase;
+package com.zopa.testBase;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features ="C:\\CarRegistrationVerification\\src\\main\\resources\\Feature",
+        features = "src\\main\\resources\\Feature",
         tags = {"@TestRun"},
-        glue = "com.dvla",
+        glue = "com.zopa",
         plugin = {"pretty","html:target/cucumber-report/", "json:target/cucumber.json"})
 
 public class CucumberTestRunner {

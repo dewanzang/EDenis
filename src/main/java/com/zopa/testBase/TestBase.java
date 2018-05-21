@@ -1,4 +1,4 @@
-package com.dvla.testBase;
+package com.zopa.testBase;
 
 import cucumber.api.java.After;
 import cucumber.api.Scenario;
@@ -24,6 +24,7 @@ import java.util.Properties;
 public class TestBase {
     public static WebDriver driver = null;
     public static String Browser;
+    public static String mainURL;
 
     public static Properties prop = new Properties();
     public static InputStream input = null;
@@ -32,9 +33,11 @@ public class TestBase {
     protected static String GetConfigProperties() throws MalformedURLException {
         try {
             input = new FileInputStream((System.getProperty("user.dir")+"\\config\\testconfig.properties"));
+
             // load a properties file
             prop.load(input);
             Browser = prop.getProperty("browser");
+            mainURL = prop.getProperty("mainURL");
         } catch (IOException ex) {
             ex.printStackTrace();
         } finally {
@@ -54,14 +57,14 @@ public class TestBase {
         String browserType = GetConfigProperties();
         if (driver == null) {
             if (browserType.equalsIgnoreCase("Chrome")) {
-                System.setProperty("webdriver.chrome.driver", "C:\\CarRegistrationVerification\\drivers\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("disable-infobars");
                 options.addArguments("--start-maximized");
 
                 driver = new ChromeDriver(options);
             } else {
-                System.setProperty("webdriver.ie.driver", "C:\\CarRegistrationVerification\\drivers\\IEDriverServer.exe");
+                System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\drivers\\IEDriverServer.exe");
                 driver = new InternetExplorerDriver();
             }
 

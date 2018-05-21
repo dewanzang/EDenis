@@ -1,0 +1,7 @@
+com\zopa\Pages\HomePage.class
+com\zopa\Steps\CreateAccountSteps.class
+com\zopa\Pages\LendingPage.class
+com\zopa\testBase\TestBase.class
+com\zopa\testBase\CucumberTestRunner.class
+com\zopa\Pages\RatesPage.class
+com\zopa\Pages\SignUpPage.class

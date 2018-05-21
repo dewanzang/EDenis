@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CarRegistrationVerification.iml" filepath="$PROJECT_DIR$/CarRegistrationVerification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZopaAcuteTest.iml" filepath="$PROJECT_DIR$/ZopaAcuteTest.iml" />
     </modules>
   </component>
 </project>
